@@ -58,12 +58,9 @@ test('primero va la pelicula que deja contentos a mas votantes', () async {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +0: ElegirPeliculaGrupal (caso de uso) primero va la pelicula que deja contentos a mas votantes
-✅ PASÓ
-```
+<img src="capturas/cmd/peli_voto_1.png" alt="flutter test prueba 1 de peli_voto" width="900">
 
 #### Prueba 2: a empate de votos gana la mejor calificada
 
@@ -78,12 +75,9 @@ test('a empate de votos gana la mejor calificada', () async {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +1: ElegirPeliculaGrupal (caso de uso) a empate de votos gana la mejor calificada
-✅ PASÓ
-```
+<img src="capturas/cmd/peli_voto_2.png" alt="flutter test prueba 2 de peli_voto" width="900">
 
 #### Prueba 3: sin votos no se consulta nada y regresa lista vacia
 
@@ -95,12 +89,9 @@ test('sin votos no se consulta nada y regresa lista vacia', () async {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +2: ElegirPeliculaGrupal (caso de uso) sin votos no se consulta nada y regresa lista vacia
-✅ PASÓ
-```
+<img src="capturas/cmd/peli_voto_3.png" alt="flutter test prueba 3 de peli_voto" width="900">
 
 #### Prueba 4: lee el JSON de TMDB y rellena lo que falta
 
@@ -125,12 +116,9 @@ test('lee el JSON de TMDB y rellena lo que falta', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +3: PeliculaModel (capa de datos) lee el JSON de TMDB y rellena lo que falta
-✅ PASÓ
-```
+<img src="capturas/cmd/peli_voto_4.png" alt="flutter test prueba 4 de peli_voto" width="900">
 
 #### Prueba 5: arma la URL completa del poster
 
@@ -143,12 +131,9 @@ test('arma la URL completa del poster', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +4: PeliculaModel (capa de datos) arma la URL completa del poster
-✅ PASÓ
-```
+<img src="capturas/cmd/peli_voto_5.png" alt="flutter test prueba 5 de peli_voto" width="900">
 
 #### Prueba 6: registrar un voto y elegir muestra la pelicula ganadora
 
@@ -175,12 +160,9 @@ testWidgets('registrar un voto y elegir muestra la pelicula ganadora', (tester) 
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +5: VotacionPage (pantalla) registrar un voto y elegir muestra la pelicula ganadora
-✅ PASÓ
-```
+<img src="capturas/cmd/peli_voto_6.png" alt="flutter test prueba 6 de peli_voto" width="900">
 
 **Resultado completo del archivo:**
 
@@ -228,12 +210,9 @@ test('con id conserva el mismo gato y agrega color y filtro', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +0: Construccion de la URL de Cataas (capa de datos) con id conserva el mismo gato y agrega color y filtro
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_1.png" alt="flutter test prueba 1 de michi_postal" width="900">
 
 #### Prueba 2: sin id pide un gato al azar
 
@@ -245,12 +224,9 @@ test('sin id pide un gato al azar', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +1: Construccion de la URL de Cataas (capa de datos) sin id pide un gato al azar
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_2.png" alt="flutter test prueba 2 de michi_postal" width="900">
 
 #### Prueba 3: frase vacia se convierte en "Miau"
 
@@ -262,12 +238,9 @@ test('frase vacia se convierte en "Miau"', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +2: Construccion de la URL de Cataas (capa de datos) frase vacia se convierte en "Miau"
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_3.png" alt="flutter test prueba 3 de michi_postal" width="900">
 
 #### Prueba 4: la diagonal "/" se reemplaza para no romper la ruta
 
@@ -279,12 +252,9 @@ test('la diagonal "/" se reemplaza para no romper la ruta', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +3: Construccion de la URL de Cataas (capa de datos) la diagonal "/" se reemplaza para no romper la ruta
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_4.png" alt="flutter test prueba 4 de michi_postal" width="900">
 
 #### Prueba 5: el filtro "Original" no manda el parametro filter
 
@@ -296,12 +266,9 @@ test('el filtro "Original" no manda el parametro filter', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +4: Construccion de la URL de Cataas (capa de datos) el filtro "Original" no manda el parametro filter
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_5.png" alt="flutter test prueba 5 de michi_postal" width="900">
 
 #### Prueba 6: cada ocasion trae 3 frases sugeridas
 
@@ -315,12 +282,9 @@ test('cada ocasion trae 3 frases sugeridas', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +5: Entidades (dominio) cada ocasion trae 3 frases sugeridas
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_6.png" alt="flutter test prueba 6 de michi_postal" width="900">
 
 #### Prueba 7: guardar una postal la agrega al album
 
@@ -343,12 +307,9 @@ testWidgets('guardar una postal la agrega al album', (tester) async {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +6: TallerPage (pantalla) guardar una postal la agrega al album
-✅ PASÓ
-```
+<img src="capturas/cmd/michi_postal_7.png" alt="flutter test prueba 7 de michi_postal" width="900">
 
 **Resultado completo del archivo:**
 
@@ -395,12 +356,9 @@ test('15 grados, despejado y sin viento: correr da verde y 100 puntos', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +0: EvaluarPlan (caso de uso) 15 grados, despejado y sin viento: correr da verde y 100 puntos
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_1.png" alt="flutter test prueba 1 de salgo_o_no" width="900">
 
 #### Prueba 2: con lluvia no conviene tender la ropa (rojo)
 
@@ -413,12 +371,9 @@ test('con lluvia no conviene tender la ropa (rojo)', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +1: EvaluarPlan (caso de uso) con lluvia no conviene tender la ropa (rojo)
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_2.png" alt="flutter test prueba 2 de salgo_o_no" width="900">
 
 #### Prueba 3: viento de 45 km/h en bici resta 60 puntos (amarillo)
 
@@ -432,12 +387,9 @@ test('viento de 45 km/h en bici resta 60 puntos (amarillo)', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +2: EvaluarPlan (caso de uso) viento de 45 km/h en bici resta 60 puntos (amarillo)
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_3.png" alt="flutter test prueba 3 de salgo_o_no" width="900">
 
 #### Prueba 4: el puntaje nunca baja de 0 aunque haya tormenta
 
@@ -451,12 +403,9 @@ test('el puntaje nunca baja de 0 aunque haya tormenta', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +3: EvaluarPlan (caso de uso) el puntaje nunca baja de 0 aunque haya tormenta
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_4.png" alt="flutter test prueba 4 de salgo_o_no" width="900">
 
 #### Prueba 5: los codigos de OpenWeatherMap se interpretan bien
 
@@ -470,12 +419,9 @@ test('los codigos de OpenWeatherMap se interpretan bien', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +4: Clima (entidad) y ClimaModel (datos) los codigos de OpenWeatherMap se interpretan bien
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_5.png" alt="flutter test prueba 5 de salgo_o_no" width="900">
 
 #### Prueba 6: convierte el viento de m/s a km/h al leer el JSON
 
@@ -497,12 +443,9 @@ test('convierte el viento de m/s a km/h al leer el JSON', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +5: Clima (entidad) y ClimaModel (datos) convierte el viento de m/s a km/h al leer el JSON
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_6.png" alt="flutter test prueba 6 de salgo_o_no" width="900">
 
 #### Prueba 7: muestra la temperatura y el veredicto del plan
 
@@ -528,12 +471,9 @@ testWidgets('muestra la temperatura y el veredicto del plan', (tester) async {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +6: ClimaPage (pantalla) muestra la temperatura y el veredicto del plan
-✅ PASÓ
-```
+<img src="capturas/cmd/salgo_o_no_7.png" alt="flutter test prueba 7 de salgo_o_no" width="900">
 
 **Resultado completo del archivo:**
 
@@ -580,12 +520,9 @@ test('con 100 USD y BTC a 50,000 se compran 0.002 BTC = 200,000 satoshis', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +0: CalcularCompra (caso de uso) con 100 USD y BTC a 50,000 se compran 0.002 BTC = 200,000 satoshis
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_1.png" alt="flutter test prueba 1 de alcancia_cripto" width="900">
 
 #### Prueba 2: maquina del tiempo: si subio 10% en 24 h, 100 USD de ayer hoy valen 110
 
@@ -599,12 +536,9 @@ test('maquina del tiempo: si subio 10% en 24 h, 100 USD de ayer hoy valen 110', 
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +1: CalcularCompra (caso de uso) maquina del tiempo: si subio 10% en 24 h, 100 USD de ayer hoy valen 110
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_2.png" alt="flutter test prueba 2 de alcancia_cripto" width="900">
 
 #### Prueba 3: si el precio llega en 0 no truena: la cantidad es 0
 
@@ -617,12 +551,9 @@ test('si el precio llega en 0 no truena: la cantidad es 0', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +2: CalcularCompra (caso de uso) si el precio llega en 0 no truena: la cantidad es 0
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_3.png" alt="flutter test prueba 3 de alcancia_cripto" width="900">
 
 #### Prueba 4: dinero agrega comas de miles y 2 decimales
 
@@ -635,12 +566,9 @@ test('dinero agrega comas de miles y 2 decimales', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +3: Formato (core) dinero agrega comas de miles y 2 decimales
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_4.png" alt="flutter test prueba 4 de alcancia_cripto" width="900">
 
 #### Prueba 5: cripto quita los ceros que sobran
 
@@ -653,12 +581,9 @@ test('cripto quita los ceros que sobran', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +4: Formato (core) cripto quita los ceros que sobran
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_5.png" alt="flutter test prueba 5 de alcancia_cripto" width="900">
 
 #### Prueba 6: lee el JSON de CoinGecko /simple/price
 
@@ -674,12 +599,9 @@ test('lee el JSON de CoinGecko /simple/price', () {
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +5: CriptoModel (capa de datos) lee el JSON de CoinGecko /simple/price
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_6.png" alt="flutter test prueba 6 de alcancia_cripto" width="900">
 
 #### Prueba 7: muestra la moneda y recalcula al escribir otro monto
 
@@ -702,12 +624,9 @@ testWidgets('muestra la moneda y recalcula al escribir otro monto', (tester) asy
 });
 ```
 
-**Salida de `flutter test`:**
+**Ejecución en el cmd de mi laptop** (`flutter test -r expanded --plain-name "…"`):
 
-```text
-00:00 +6: AlcanciaPage (pantalla) muestra la moneda y recalcula al escribir otro monto
-✅ PASÓ
-```
+<img src="capturas/cmd/alcancia_cripto_7.png" alt="flutter test prueba 7 de alcancia_cripto" width="900">
 
 **Resultado completo del archivo:**
 
