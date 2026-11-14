@@ -1,0 +1,9 @@
+00:00 +0: loading C:/tacho_actividad8/salgo_o_no/test/widget_test.dart
+00:00 +0: EvaluarPlan (caso de uso) 15 grados, despejado y sin viento: correr da verde y 100 puntos
+00:00 +1: EvaluarPlan (caso de uso) con lluvia no conviene tender la ropa (rojo)
+00:00 +2: EvaluarPlan (caso de uso) viento de 45 km/h en bici resta 60 puntos (amarillo)
+00:00 +3: EvaluarPlan (caso de uso) el puntaje nunca baja de 0 aunque haya tormenta
+00:00 +4: Clima (entidad) y ClimaModel (datos) los codigos de OpenWeatherMap se interpretan bien
+00:00 +5: Clima (entidad) y ClimaModel (datos) convierte el viento de m/s a km/h al leer el JSON
+00:00 +6: ClimaPage (pantalla) muestra la temperatura y el veredicto del plan
+00:01 +7: All tests passed!

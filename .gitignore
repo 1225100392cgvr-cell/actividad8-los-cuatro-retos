@@ -1,0 +1,4 @@
+build/
+.dart_tool/
+*.log
+_llaves.txt

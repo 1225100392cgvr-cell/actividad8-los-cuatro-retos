@@ -1,0 +1,9 @@
+00:00 +0: loading C:/tacho_actividad8/alcancia_cripto/test/widget_test.dart
+00:00 +0: CalcularCompra (caso de uso) con 100 USD y BTC a 50,000 se compran 0.002 BTC = 200,000 satoshis
+00:00 +1: CalcularCompra (caso de uso) maquina del tiempo: si subio 10% en 24 h, 100 USD de ayer hoy valen 110
+00:00 +2: CalcularCompra (caso de uso) si el precio llega en 0 no truena: la cantidad es 0
+00:00 +3: Formato (core) dinero agrega comas de miles y 2 decimales
+00:00 +4: Formato (core) cripto quita los ceros que sobran
+00:00 +5: CriptoModel (capa de datos) lee el JSON de CoinGecko /simple/price
+00:00 +6: AlcanciaPage (pantalla) muestra la moneda y recalcula al escribir otro monto
+00:01 +7: All tests passed!

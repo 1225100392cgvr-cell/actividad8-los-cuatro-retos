@@ -1,0 +1,9 @@
+00:00 +0: loading C:/tacho_actividad8/michi_postal/test/widget_test.dart
+00:00 +0: Construccion de la URL de Cataas (capa de datos) con id conserva el mismo gato y agrega color y filtro
+00:00 +1: Construccion de la URL de Cataas (capa de datos) sin id pide un gato al azar
+00:00 +2: Construccion de la URL de Cataas (capa de datos) frase vacia se convierte en "Miau"
+00:00 +3: Construccion de la URL de Cataas (capa de datos) la diagonal "/" se reemplaza para no romper la ruta
+00:00 +4: Construccion de la URL de Cataas (capa de datos) el filtro "Original" no manda el parametro filter
+00:00 +5: Entidades (dominio) cada ocasion trae 3 frases sugeridas
+00:00 +6: TallerPage (pantalla) guardar una postal la agrega al album
+00:03 +7: All tests passed!

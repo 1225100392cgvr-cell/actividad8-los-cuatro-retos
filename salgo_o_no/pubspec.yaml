@@ -1,0 +1,21 @@
+name: salgo_o_no
+description: "¿Salgo o no?: app del clima minimalista que da un veredicto tipo semáforo según el plan que tengas."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  geolocator: ^13.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
