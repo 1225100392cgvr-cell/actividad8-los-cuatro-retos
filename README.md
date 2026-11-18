@@ -1,3 +1,117 @@
+## Fase 1. PeliVoto
+
+Este reto consulta películas en TMDB. Cada amigo del grupo vota su estado de ánimo y la app recomienda primero la película que deja contentos a más personas, con título, sinopsis, año y calificación.
+
+Pruebas de la aplicación (`peli_voto/test/widget_test.dart`):
+
+1. Primero va la película que deja contentos a más votantes.
+2. A empate de votos gana la mejor calificada.
+3. Sin votos no se consulta nada y regresa lista vacía.
+4. Lee el JSON de TMDB y rellena lo que falta.
+5. Arma la URL completa del póster.
+6. Registrar un voto y elegir muestra la película ganadora.
+
+### Fase roja
+
+La prueba falla porque todavía falta implementar el caso de uso que elige la película del grupo.
+
+![Error de la fase 1](capturas/fases/fase_01_roja.png)
+
+### Fase verde
+
+Se agrega el modelo de película, el repositorio de TMDB, el caso de uso de votación y la pantalla. Las 6 pruebas pasan.
+
+![Código de la fase 1](capturas/fases/fase_01_verde.png)
+
+## Fase 2. MichiPostal
+
+Este reto crea postales con imágenes de gatos de Cataas. Permite escribir una frase, elegir una ocasión, un filtro, el color y el tamaño de la letra, y guardar la postal en un álbum.
+
+Pruebas de la aplicación (`michi_postal/test/widget_test.dart`):
+
+1. Con id conserva el mismo gato y agrega color y filtro.
+2. Sin id pide un gato al azar.
+3. La frase vacía se convierte en "Miau".
+4. La diagonal "/" se reemplaza para no romper la ruta.
+5. El filtro "Original" no manda el parámetro filter.
+6. Cada ocasión trae 3 frases sugeridas.
+7. Guardar una postal la agrega al álbum.
+
+### Fase roja
+
+La prueba muestra el error antes de completar la construcción de la URL del gato.
+
+![Error de la fase 2](capturas/fases/fase_02_roja.png)
+
+### Fase verde
+
+Se agrega la construcción de la URL, las ocasiones con sus frases, los filtros y la pantalla del taller con el álbum. Las 7 pruebas pasan.
+
+![Código de la fase 2](capturas/fases/fase_02_verde.png)
+
+## Fase 3. ¿Salgo o no?
+
+Este reto consulta el clima en OpenWeatherMap y, según el plan elegido (correr, bici, tender ropa, picnic, etc.), da un veredicto tipo semáforo del 0 al 100 con sus razones.
+
+Pruebas de la aplicación (`salgo_o_no/test/widget_test.dart`):
+
+1. 15 grados, despejado y sin viento: correr da verde y 100 puntos.
+2. Con lluvia no conviene tender la ropa (rojo).
+3. Viento de 45 km/h en bici resta 60 puntos (amarillo).
+4. El puntaje nunca baja de 0 aunque haya tormenta.
+5. Los códigos de OpenWeatherMap se interpretan bien.
+6. Convierte el viento de m/s a km/h al leer el JSON.
+7. Muestra la temperatura y el veredicto del plan.
+
+### Fase roja
+
+La prueba falla mientras todavía no existe el caso de uso que evalúa el plan con el clima.
+
+![Error de la fase 3](capturas/fases/fase_03_roja.png)
+
+### Fase verde
+
+Se agrega el modelo del clima, el servicio de consulta, el caso de uso del semáforo y la pantalla de resultados. Las 7 pruebas pasan.
+
+![Código de la fase 3](capturas/fases/fase_03_verde.png)
+
+## Fase 4. Alcancía Cripto
+
+Este reto consulta precios en CoinGecko y calcula cuánto se puede comprar de Bitcoin, Ethereum y Solana con una cantidad en dólares, también en satoshis, gwei y lamports.
+
+Pruebas de la aplicación (`alcancia_cripto/test/widget_test.dart`):
+
+1. Con 100 USD y BTC a 50,000 se compran 0.002 BTC = 200,000 satoshis.
+2. Máquina del tiempo: si subió 10% en 24 h, 100 USD de ayer hoy valen 110.
+3. Si el precio llega en 0 no truena: la cantidad es 0.
+4. El formato de dinero agrega comas de miles y 2 decimales.
+5. El formato de cripto quita los ceros que sobran.
+6. Lee el JSON de CoinGecko `/simple/price`.
+7. Muestra la moneda y recalcula al escribir otro monto.
+
+### Fase roja
+
+La prueba muestra el error antes de completar el cálculo de la compra.
+
+![Error de la fase 4](capturas/fases/fase_04_roja.png)
+
+### Fase verde
+
+Se agrega la consulta de precios, el formato en dólares y el cálculo de cada criptomoneda. Las 7 pruebas pasan.
+
+![Código de la fase 4](capturas/fases/fase_04_verde.png)
+
+## Aplicación completa
+
+Cada reto es una aplicación de Flutter en su propia carpeta y se ejecutó en el emulador de Android con datos reales de cada API.
+
+| PeliVoto | MichiPostal | ¿Salgo o no? | Alcancía Cripto |
+|---|---|---|---|
+| <img src="capturas/peli_3_resultado.png" width="200"> | <img src="capturas/michi_2_cumple.png" width="200"> | <img src="capturas/salgo_1_inicio.png" width="200"> | <img src="capturas/alcancia_1_inicio.png" width="200"> |
+
+## Resultado
+
+Las cuatro fases quedaron documentadas una por una, con su evidencia roja, su evidencia verde y la captura final de cada aplicación. En total son 27 pruebas y todas pasan.
 # Actividad 8 · Los cuatro retos
 
 **Materia:** Desarrollo de Aplicaciones Móviles 2026  ·  **Docente:** Anastacio Rodríguez García  ·  **Alumno:** Cristopher Gerardo Villanueva Ramírez
